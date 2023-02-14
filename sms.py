@@ -46,7 +46,7 @@ def send(cellphone):
 
 
 def spam(args):
-    if search(r"9\d{9}$", args.cellphone):
+    if search(r"5\d{5}$", args.cellphone):
         for time in range(args.times):
             print(f"\rSending SMS {time+1}/{args.times}", end="")
             try:
